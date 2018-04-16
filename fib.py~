@@ -79,7 +79,7 @@ def phi_converge_print():
         i += 1
         phi_old = phi_new
         phi_new = phi_approx(i, show_output=False)
-HEAD
+<<<<<<< HEAD
         print phi_converge_output_format.format(i, phi_new, phi_old)
     print "\nConverged to %.25f" % phi_new
 
@@ -98,7 +98,8 @@ def phi_converge(filename):
     file.write("\nConverged to %.25f" % phi_new)
     file.close()
     
+=======
         print(phi_converge_output_format.format(i, phi_new, phi_old))
     print("\nConverged to %.25f" % phi_new)
-5af5388d4bd3a5df0b9dbd9305f75a3c7a727909
+>>>>>>> 5af5388d4bd3a5df0b9dbd9305f75a3c7a727909
 if __name__ == '__main__': main()
